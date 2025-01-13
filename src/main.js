@@ -4,6 +4,8 @@ import store from './store'
 import router from './router'
 import './plugins'
 import '@/layouts/export'
+import i18n from './i18n'
+
 /**
  * @author https://github.com/zxwk1998/vue-admin-better （不想保留author可删除）
  * @description 生产环境默认都使用mock，如果正式用于生产环境时，记得去掉
@@ -18,6 +20,7 @@ Vue.config.productionTip = false
 
 new Vue({
   el: '#vue-admin-better',
+  i18n,
   router,
   store,
   render: (h) => h(App),

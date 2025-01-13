@@ -1,16 +1,18 @@
 <template>
-  <div class="test-container">
-    <el-divider content-position="left">你可以在这里写demo</el-divider>
+  <div>
+    <h1>{{ $t('welcome') }}</h1>
+    <p>{{ $t('description') }}</p>
+    <button @click="changeLanguage('en')">English</button>
+    <button @click="changeLanguage('zh')">中文</button>
   </div>
 </template>
+
 <script>
   export default {
-    name: 'Test',
-    data() {
-      return { show: true }
+    methods: {
+      changeLanguage(lang) {
+        this.$i18n.locale = lang
+      },
     },
-    created() {},
-    mounted() {},
-    methods: {},
   }
 </script>

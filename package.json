@@ -50,6 +50,7 @@
     "vab-icon": "file:vab-icon",
     "vue": "~2.7.14",
     "vue-echarts": "6.7.3",
+    "vue-i18n": "^8.28.2",
     "vue-router": "^3.6.5",
     "vue-template-compiler": "~2.7.14",
     "vuex": "^3.6.2"
