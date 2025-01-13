@@ -70,7 +70,76 @@ export const asyncRoutes = [
       },
     ],
   }, */
-
+  {
+    path: '/test',
+    component: Layout,
+    redirect: 'noRedirect',
+    name: 'TestModule',
+    alwaysShow: true,
+    meta: { title: '测试模块', icon: 'flask', permissions: ['admin'] },
+    children: [
+      {
+        path: 'test1',
+        name: 'Test1',
+        component: () => import('@/views/test/test1'),
+        meta: { title: '测试组件1', permissions: ['admin'] },
+      },
+      {
+        path: 'test2',
+        name: 'Test2',
+        component: () => import('@/views/test/test2'),
+        meta: { title: '测试组件2', permissions: ['admin'] },
+      },
+      {
+        path: 'test3',
+        name: 'Test3',
+        component: () => import('@/views/test/test3'),
+        meta: { title: '测试组件3', permissions: ['admin'] },
+      },
+      {
+        path: 'test4',
+        name: 'Test4',
+        component: () => import('@/views/test/test4'),
+        meta: { title: '测试组件4', permissions: ['admin'] },
+      },
+      {
+        path: 'test5',
+        name: 'Test5',
+        component: () => import('@/views/test/test5'),
+        meta: { title: '测试组件5', permissions: ['admin'] },
+      },
+      {
+        path: 'test6',
+        name: 'Test6',
+        component: () => import('@/views/test/test6'),
+        meta: { title: '测试组件6', permissions: ['admin'] },
+      },
+      {
+        path: 'test7',
+        name: 'Test7',
+        component: () => import('@/views/test/test7'),
+        meta: { title: '测试组件7', permissions: ['admin'] },
+      },
+      {
+        path: 'test8',
+        name: 'Test8',
+        component: () => import('@/views/test/test8'),
+        meta: { title: '测试组件8', permissions: ['admin'] },
+      },
+      {
+        path: 'test9',
+        name: 'Test9',
+        component: () => import('@/views/test/test9'),
+        meta: { title: '测试组件9', permissions: ['admin'] },
+      },
+      {
+        path: 'test10',
+        name: 'Test10',
+        component: () => import('@/views/test/test10'),
+        meta: { title: '测试组件10', permissions: ['admin'] },
+      },
+    ],
+  },
   {
     path: '/vab',
     component: Layout,
